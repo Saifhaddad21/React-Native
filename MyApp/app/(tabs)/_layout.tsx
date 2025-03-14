@@ -4,9 +4,10 @@ import { Platform } from 'react-native';
 
 import { HapticTab } from '@/components/HapticTab';
 import { IconSymbol } from '@/components/ui/IconSymbol';
+import TabBarIcon from '@/components/ui/TabBarIcon'; // Add this line
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
-import { TabBarIcon } from '@/components/ui/TabBarIcon';
+
 import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function TabLayout() {
@@ -40,9 +41,9 @@ export default function TabLayout() {
         name="contact"
         options={{
           title: 'Contact Us',
-          tabBarIcon : ({ color ,focused }) => ( 
-          <TabBarIcon name={focused ? 'people-circle' : 'people-circle-outline'} color={color} />
-          )
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'people-circle' : 'people-circle-outline'} color={color} />
+          ),
         }}
       />
     </Tabs>
