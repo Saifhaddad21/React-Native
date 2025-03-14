@@ -23,19 +23,20 @@ const styles = StyleSheet.create({
   container : {
     flex: 1,
     flexDirection: 'column',
+  
   },
   image: {  
     width: '100%',
     height: '100%',
     flex: 1,
-    justifyContent: 'center',
     resizeMode: 'cover',
+    justifyContent: 'center', 
   },
   text: {
-    color: 'white',
+    color: 'blue',
     fontSize: 42,
     fontWeight: 'bold', 
     textAlign: 'center',
-    backgroundColor: 'rgba (0,0,0,0.5)',
+    backgroundColor: 'rgba(0,0,0,0.5)',
   }
-});
+})
